@@ -1,3 +1,4 @@
+# O for é uma estrutura de repetição com variavel de controle
 for c in range(5, 55, 5):
     print(c)
 print('fim')

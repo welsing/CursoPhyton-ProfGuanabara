@@ -1,8 +1,6 @@
 import random
 import time
 
-
-
 print("\033[1;30m-=-" * 10)
 print(" "*8, "\033[1;33mJO\033[1;34mKEN\033[1;35mPO\033[m \033[31mGAME\033[m")
 print("\033[1;30m-=-\033[m" * 10)
