@@ -31,6 +31,7 @@ while resposta != 'S':
     resposta = input('😼 DIGITE S/N: ').strip().upper()
     if resposta == 'S':
         print('🤖 - Okay, vamos lá!!')
+        print('-='*20)
         print('🤖 PENSANDO EM UM NÚMERO... ')
         sleep(3.5)
         break

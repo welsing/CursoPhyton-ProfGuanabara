@@ -36,7 +36,7 @@ print(f'Você escolhei {par} números pares e {impar} números impares')
 # 062 - Melhore o DESAFIO 061, perguntando para o usuário se ele quer mostrar mais alguns termos.
 #  O programa encerra quando ele disser que quer mostrar 0 termos.
 
-# Escreva um programa que leia um número N inteiro qualquer 
+# 063 - Escreva um programa que leia um número N inteiro qualquer 
 # e mostre na tela os N primeiros elementos de uma sequencia de Fibonacci.
 # ex: 0 -> 1 -> 1 -> 2 -> 3 -> 5 -> 8
 
