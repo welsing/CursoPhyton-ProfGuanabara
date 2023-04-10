@@ -6,6 +6,7 @@
 # [5] Sair do programa
 # Seu programa deverá realizar a operação solicitada em casa caso.
 from time import sleep
+import os
 print("{:^50}".format('\033[7m___MENU CALCULATOR___\033[m'))
 print('-='*10)
 n1 = int(input('Digite o 1º valor: '))
@@ -22,16 +23,17 @@ while opcao != 5:
     [4] - Add novos números 🧩
     [5] - SAIR ❌
     ''')
-    opcao = input('Escolha uma opção: ')
+    opcao = input('>>>>> Escolha uma opção: ')
     opcao = int(opcao)
+    os.system('cls')
     if opcao == 1:
         print('SOMANDO...')
         sleep(1)
-        print(f'A soma de {n1} e {n2} é {n1 + n2}')
+        print(f'A soma de {n1} + {n2} é {n1 + n2}')
     elif opcao == 2:
         print('CONSULTANDO TABUADA...')
         sleep(1)
-        print(f'O produto de {n1}x{n2} é {n1*n2}')
+        print(f'O produto de {n1} x {n2} é {n1*n2}')
     elif opcao == 3:
         print('ANALISANDO...')
         sleep(1)
@@ -51,5 +53,6 @@ while opcao != 5:
         print('OPÇÃO \033[31mINVALIDA\033[m, TENTE NOVAMENTE!')
     print('LOADING...')
     sleep(2)
+    
     
 print('ATÉ LOGO! 👋')

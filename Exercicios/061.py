@@ -6,10 +6,7 @@ razao = int(input('Insira uma razão: '))
 count = 0
 print('{:^30}'.format(f'ESTÁ É A PA DE {razao}'))
 while count != 10:
-    if count < 9:
-        print(f'{termo}', end=' > ')
-    else:
-        print(f'{termo}')
+    print(f'{termo}', end=' > ')
     termo += razao
     count += 1
 print('FIM!')

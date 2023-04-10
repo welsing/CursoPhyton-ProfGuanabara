@@ -1,10 +1,11 @@
 # 058 - Melhore o jogo DESAFIO 028 onde o computador vai "PENSAR" em um número entre 0 e 10. 
 # Só que agora o jogador vai tentar adivinhar até acertar, mostrando no final quantos palpites 
 # foram necessários para vencer.
-
+#                           ESTÁ É MINHA VERSÃO DA RESOLUÇÃO DO EXERCICIO, TENTEI DEIXAR MAIS DIVERTIDO DO QUE A RESOLUÇÃO NO CURSO.
 from random import randint
 from time import sleep
 import sys
+import os
 pc = randint(1, 10)
 
 print(''' ---- \033[34m 🧠⁉️ JOGO DO ADIVINHA ⁉️🧠\033[m ----
@@ -31,9 +32,12 @@ while resposta != 'S':
     resposta = input('😼 DIGITE S/N: ').strip().upper()
     if resposta == 'S':
         print('🤖 - Okay, vamos lá!!')
+        sleep(2)
+        os.system('cls') or None
         print('-='*20)
         print('🤖 PENSANDO EM UM NÚMERO... ')
         sleep(3.5)
+        
         break
     elif resposta == 'N':
         print('Okay, até a proxima então. 👋')
@@ -44,6 +48,7 @@ while resposta != 'S':
 while pc != user:
     user = int(input('Digite um \033[34mnúmero\033[m de \033[4m1 a 10\033[m: '))
     if pc != user:
+
         print("Eita, você errou! Tente novamente.")
         sleep(0.5)
         tentativas += 1
@@ -57,6 +62,9 @@ while pc != user:
         
         print(f'Você já deu {tentativas} {cor_Palpites}! ')
         sleep(1.5)
+        
+
 
 print('Você ACERTOU!!!')
+
 
