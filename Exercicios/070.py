@@ -14,25 +14,24 @@ soma = mil_Produtos = count = 0
 mais_Barato = ''
 
 print('#'*30)
-print('{:^30}'.format('CADASTRO DE PRODUTOS'))
+print('{:-^30}'.format('CADASTRO DE PRODUTOS'))
 print('#'*30)
 
 while True:
     nome = input('NOME: ').strip()
     preco = float(input('PREÇO R$: '))
-    if count == 0:
+    soma += preco
+    if count == 0 or preço < menor:
         preco_Barato = preco
         mais_Barato = nome
-
-    soma += preco
+  # if preco < preco_Barato:
+    #   preco_Barato = preco
+    #   mais_Barato = nome
+   
     if preco > 1000:
         mil_Produtos += 1
-    if preco < preco_Barato:
-        preco_Barato = preco
-        mais_Barato = nome
-    
-    count += 1
 
+    count += 1
 
     while True:
         continuar = input('Quer continuar?[S/N]: ').strip().upper()[0]
@@ -47,7 +46,9 @@ while True:
         system('cls')
         break
 
-print(f'{mil_Produtos} produtos mais de 1000$, {mais_Barato} foi o produto mais barato\nTotal da compra: {soma}')
+print(f'O produto mais barato foi {mais_Barato} por R${preco_Barato}.')
+print(f'{mil_Produtos} produtos mais caros que R$1000')
+print(f'TOTAL GASTO: R${soma:.2f}')
 
 
 print('FIM!')

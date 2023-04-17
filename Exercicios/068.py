@@ -35,7 +35,6 @@ while True:
     soma = user_Number + pc_Number
 
     if soma%2 != 0:
-        print('')
         win = 'IMPAR'
     elif soma%2 == 0:
         win = 'PAR'
@@ -46,7 +45,8 @@ while True:
     print('     OU')
     sleep(0.5)
     print('         PAR!')
-    sleep(0.5)                                            
+    sleep(0.5)   
+
     print(f'😼 JOGADOR: \033[34m{user_Choice}\033[m | \033[34m{user_Number}\033[m')
     print(f'🖥️  COMPUTADOR:\033[36m{pc_Choice}\033[m | \033[36m{pc_Number}\033[m')
     print(f'O total foi \033[33m{user_Number+pc_Number}\033[m que é \033[33m{win}\033[m')
@@ -54,7 +54,7 @@ while True:
     if user_Choice == win:
         count += 1
         print('PARABENS! Você \033[32mGANHOU!\033[m')
-        print(f'\033[7mVITORIAS CONSECUTIVAS: \033[32m{count}\033[m')
+        print(f'\033[7mVITORIAS CONSECUTIVAS:\033[m {count}')
         while True:
             proxima = input('\033[4mQUER CONTINUAR?\033[m [S/N]:').upper()[0]
             if proxima == 'N':
@@ -66,6 +66,3 @@ while True:
         print('Você \033[31mPERDEU!\033[m')
         break
 print('Até a proxima...')
-
-
-        
