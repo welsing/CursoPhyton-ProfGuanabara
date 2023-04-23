@@ -10,7 +10,7 @@ from os import system
 # LIMPANDO A TELA
 system('cls') or None
 
-soma = mil_Produtos = count = 0
+soma = mil_Produtos = count = preco = 0
 mais_Barato = ''
 
 print('#'*30)
@@ -21,13 +21,13 @@ while True:
     nome = input('NOME: ').strip()
     preco = float(input('PREÇO R$: '))
     soma += preco
-    if count == 0 or preço < menor:
+    if count == 0 or preco < mais_Barato:
         preco_Barato = preco
         mais_Barato = nome
   # if preco < preco_Barato:
     #   preco_Barato = preco
     #   mais_Barato = nome
-   
+
     if preco > 1000:
         mil_Produtos += 1
 
