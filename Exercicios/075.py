@@ -7,9 +7,8 @@ valor1 = int(input('Digite um valor: '))
 valor2 = int(input('Digite um valor: '))
 valor3 = int(input('Digite um valor: '))
 valor4 = int(input('Digite um valor: '))
-
 tupla = valor1, valor2, valor3, valor4
-
+print(f'Você digitou os valores: {tupla}')
 vezes9 = tupla.count(9)
 if vezes9 > 0:
     print(f'Você digitou {tupla.count(9)} vezes o número 9.')
@@ -22,12 +21,18 @@ try:
 except ValueError:
     print('O 3 não se encontra em nenhuma posição.')
 
-print('Os números pares são: ', end='')
 condição = 0
-for i in range(0,4):
-    par = tupla[i]
-    if par%2 == 0:
-        print(par, end=' ')
+print('Os números pares são: ', end='')
+for n in tupla:
+    if n %2 ==0:
+        print(n, end=' ')
         condição += 1
+
+        
+# for i in range(0,4):
+#     par = tupla[i]
+#     if par%2 == 0:
+#         print(par, end=' ')
+#           condição += 1
 if condição == 0:
     print('\033[31mNão existem\033[m números pares')

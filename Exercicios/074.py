@@ -7,5 +7,5 @@ tupla = (randint(1,10), randint(1,10), randint(1,10), randint(1,10), randint(1,1
 
 print(f'👨‍💻 Pensei nos números: {tupla}')
 
-print(f'O maior número é {sorted(tupla)[0]}')
-print(f'O menor número é {sorted(tupla)[-1]}')
+print(f'O maior número é {max(tupla)}')
+print(f'O menor número é {min(tupla)}')
