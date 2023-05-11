@@ -27,12 +27,12 @@ for n in tupla:
     if n %2 ==0:
         print(n, end=' ')
         condição += 1
-
         
 # for i in range(0,4):
 #     par = tupla[i]
 #     if par%2 == 0:
 #         print(par, end=' ')
 #           condição += 1
+
 if condição == 0:
     print('\033[31mNão existem\033[m números pares')
