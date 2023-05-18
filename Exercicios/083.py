@@ -3,15 +3,23 @@
 
 
 exp = input('Digite uma expressão: ')
+verificador = []
 
-openCol = openParen = openChaves = 0
+for i in exp:
+    if i == '(':
+        verificador.append('(')
+    elif i == ')':
+        if len(verificador) > 0:
+            verificador.pop()
+        else:
+            verificador.append(')')
+            break
 
-expressao = ''
-if '[({})]' in exp:
-    for i in range(len(exp)):
-        if exp[i] == '[':
-            openCol += 1
+if len(verificador) > 0:
+    print("Sua expressão está errada!")
 else:
-    print('Expressão Válida')
+    print("Sua expressão está correta!")
+
+
 
     
