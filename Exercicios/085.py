@@ -2,7 +2,6 @@
 # que matenha separado os valores pares e impares. No final, mostre os valores pares e impares em ordem crescente.
 
 lista = [[], []]
-
 for i in range(0, 7):
     n = int(input(f'Digite o {i+1} valor número: '))
     if n % 2 == 0:

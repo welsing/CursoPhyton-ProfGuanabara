@@ -13,8 +13,9 @@ question = int(input('Quantos jogos quer \033[34msortear?\033[m: '))
 
 print('{:-^38}'.format('\033[4mGerando DADOS\033[m'))
 for i in range(0, question):
-    sleep(2)
-    sorteados = sample(range(1, 60), 6)
+    sleep(0.5)
+    sorteados = sample(range(1, 61), 6)
+    sorteados.sort()
     print(f'JOGO {i+1}: {sorteados}')
     jogos.append(sorteados[:])
     sorteados.clear()

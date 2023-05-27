@@ -29,12 +29,12 @@ while True:
         break
 
 print(f'CADASTROS REALIZADOS: {len(pessoas)}')
-print('Menores pesos cadastrados: ', end='')
+print(f'O menor peso cadastrado foi {menor} das pessoas: ', end='')
 for v, p in enumerate(pessoas):
     if pessoas[v][1] == menor:
-        print(pessoas[v], end=' ')
+        print(f"[{pessoas[v][0]}]", end=' ')
 print()
-print('Maiores pesos cadastrados: ', end='')
+print(f'O maior peso cadastrado foi {maior}kg das pessoas: ', end='')
 for v, p in enumerate(pessoas):
     if pessoas[v][1] == maior:
-        print(pessoas[v], end=' ')
+        print(f"[{pessoas[v][0]}]", end=' ')
