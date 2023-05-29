@@ -29,6 +29,7 @@ while True:
     # SAIR DO GAME
     if player == 'x':
         print("- Foi \033[37mdivertido\033[m jogar com \033[32mvocê\033[m! \033[4mAté logo\033[m!😘 ")
+        #fim
         break
 
     # PAUSA DE TENSÃO
