@@ -6,17 +6,17 @@ import operator
 from random import randint
 from time import sleep
 
-jogo = {'Jogador 1':randint(1,6),'Jogador 2':randint(1,6),'Jogador 3':randint(1,6),'Jogador 4':randint(1,6)}
+jogo = {'Jogador 1':randint(1,6),
+        'Jogador 2':randint(1,6),
+        'Jogador 3':randint(1,6),
+        'Jogador 4':randint(1,6)}
 
 print('---- JOGANDO DADOS ----')
 for j, d in jogo.items():
     print(f"O {j} jogou o dado e caiu {d}!")
-    sleep(0.5)
-
-jogoEmOrdem = sorted(jogo.items(), key=operator.itemgetter(1))
+    sleep(1)
+jogoEmOrdem = sorted(jogo.items(), key=operator.itemgetter(1), reverse=True)
 print('== CLASSIFICAÇÃO DA PARTIDA ==')
-for i, n in enumerate(jogoEmOrdem):
-    print(f"{i+1}º: {jogoEmOrdem[i][0]} com {jogoEmOrdem[i][1]} pontos.")
+for i, j in enumerate(jogoEmOrdem):
+    print(f"  {i+1}º Lugar: {j[0]} com {j[1]} pontos.")
     sleep(0.5)
-
-    

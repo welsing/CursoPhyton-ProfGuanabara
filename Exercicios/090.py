@@ -5,9 +5,12 @@ aluno = dict()
 print(f"{'CONSULTAR STATUS ESCOLAR':^35}")
 aluno['nome'] = input('Nome: ')
 aluno['media'] = float(input("MÉDIA: "))
-if aluno['media'] > 6:
+if aluno['media'] >= 6:
     aluno['status'] = "APROVADO!"
+elif 6 > aluno['media'] >= 4:
+    aluno['status'] = 'RECUPERAÇÃO'
 else:
     aluno['status'] = "REPROVADO!"
-
-print(f'{aluno["nome"].upper()} teve a média de {aluno["media"]} e está {aluno["status"]}')
+print('='*30)
+for k, v in aluno.items():
+    print(f' - {k} é igual a {v}')
