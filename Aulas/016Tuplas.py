@@ -2,6 +2,8 @@
 # existem (tuplas), [listas] e {dicionarios} 
 # As tuplas no phyton desde o 3.5 não precisam mais dos (parenteses)
 
+# as tuplas não podem ser modificadas depois de sua criação.
+
 
 lanche = ('Hamburguer', 'Suco', 'Pizza', 'Pudim')
 
