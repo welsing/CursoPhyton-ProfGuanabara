@@ -1,7 +1,7 @@
 # 099 - Faça um programa que tenha uma função chamada maior(), que receba varios parametros de valores inteiros.
 # Seu programa tem que analisar todos os valores e dizer qual deles é o maior.
 
-from random import randint
+from random import randint as rd
 
 def maior (*num):
     print(' -=-=- PROCURANDO O MAIOR NÚMERO -=-=-')
@@ -24,22 +24,24 @@ def menor(*num):
         elif n < menor:
             menor = n
     print(f"Os números que pediu para analisar foi? : {num}")
-    print(f'O maior número foi: {menor}')
+    print(f'O menor número foi: {menor}')
 
-def rand():
-    num = list()
-    for n in range(1, randint(5, 13)):
-        num.append(randint(0, 99))
-    num = tuple(num)
-    return(num)
 
+# NÃO DEU CERTO :( | QUEM SABE UM DIA?
+# def rand():
+#     num = list()
+#     for n in range(1, rd(5, 13)):
+#         num.append(rd(0, 99))
+    
+#     for i in range(0, len(num)):
+#         return(num[i])
+    
 
 
 maior(5,5,3,6,8,2,1,8,4,5,22,2,5,7,5,6)
-menor(randint(0, 99),randint(0, 99),randint(0, 99),randint(0, 99),randint(0, 99),randint(0, 99),randint(0, 99))
-maior(randint(0, 99),randint(0, 99),randint(0, 99),randint(0, 99),randint(0, 99),randint(0, 99),randint(0, 99),randint(0, 99),randint(0, 99),randint(0, 99),randint(0, 99))
-menor(randint(0, 99),randint(0, 99),randint(0, 99))
-maior(randint(0, 99),randint(0, 99),randint(0, 99),randint(0, 99),randint(0, 99),randint(0, 99),randint(0, 99),randint(0, 99))
+menor(rd(0, 99),rd(0, 99),rd(0, 99),rd(0, 99),rd(0, 99),rd(0, 99),rd(0, 99),rd(0, 99),rd(0, 99),rd(0, 99),rd(0, 99))
+maior(rd(0, 99),rd(0, 99),rd(0, 99))
+maior(rd(0, 99),rd(0, 99),rd(0, 99),rd(0, 99),rd(0, 99),rd(0, 99),rd(0, 99),rd(0, 99))
 
 
 
