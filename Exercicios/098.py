@@ -15,15 +15,17 @@ def contador(ini, fim, passo):
     if passo == 0:
         passo = 1
     elif passo < 0:
-        passo = abs(passo)
+        passo = abs(passo) # A função abs() trás o valor ABSOLUTO do número, ex abs(-5) = 5
     print(f'Contagem de {ini} até {fim} de {passo} em {passo}')
     sleep(1)
     if ini < fim:
         for count in range(ini, fim+1, passo):
-            print(count, end=' ')
+            print(count, end=' ', flush=True)
+            sleep(0.5)
     elif fim < ini:
         for count in range(ini, fim-1, -passo):
-            print(count, end=' ')
+            print(count, end=' ', flush=True)
+            sleep(0.5)
     
     print(' -> FIM!')
 
@@ -35,6 +37,8 @@ contador(10, 0, 2)
 sleep(2)
 sep()
 print('Agora é a SUA vez de personalizar a contagem!')
-contador(int(input('Incio: ')), int(input('Fim: ')), int(input('Passo: ')))
+contador(int(input('Incio: ')), 
+         int(input('Fim: ')), 
+         int(input('Passo: ')))
 
 
