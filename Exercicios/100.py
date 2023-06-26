@@ -17,11 +17,8 @@ def somaPar(addList):
     for i in addList:
         if i % 2 == 0:
             somaP += i
-
     print(f'Somando os valores pares de {addList}. Temos {somaP}')
     
-
-
 
 
 numeros = list()
