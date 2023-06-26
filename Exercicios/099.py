@@ -11,7 +11,7 @@ def maior (*num):
         elif n > maior:
             maior = n
 
-    print(f"Os números que pediu para analisar foi? : {num}")
+    print(f"Os números que pediu para analisar foi : {num}")
     print(f'O maior número foi: {maior}')
 
 
@@ -23,11 +23,18 @@ def menor(*num):
             menor = n
         elif n < menor:
             menor = n
-    print(f"Os números que pediu para analisar foi? : {num}")
+    print(f"Os números que pediu para analisar foi : {num}")
     print(f'O menor número foi: {menor}')
 
+maior(5,5,3,6,8,2,1,8,4,5,22,2,5,7,5,6)
+menor(rd(0, 99),rd(0, 99),rd(0, 99),rd(0, 99),rd(0, 99),rd(0, 99),rd(0, 99),rd(0, 99),rd(0, 99),rd(0, 99),rd(0, 99))
+maior(rd(0, 99),rd(0, 99),rd(0, 99))
+maior(rd(0, 99),rd(0, 99),rd(0, 99),rd(0, 99),rd(0, 99),rd(0, 99),rd(0, 99),rd(0, 99))
+maior(0)
 
-# NÃO DEU CERTO :( | QUEM SABE UM DIA?
+
+
+# Só da certo se não colocar * no parametro
 # def rand():
 #     num = list()
 #     for n in range(1, rd(5, 13)):
@@ -36,16 +43,6 @@ def menor(*num):
 #     for i in range(0, len(num)):
 #         return(num[i])
     
-
-
-maior(5,5,3,6,8,2,1,8,4,5,22,2,5,7,5,6)
-menor(rd(0, 99),rd(0, 99),rd(0, 99),rd(0, 99),rd(0, 99),rd(0, 99),rd(0, 99),rd(0, 99),rd(0, 99),rd(0, 99),rd(0, 99))
-maior(rd(0, 99),rd(0, 99),rd(0, 99))
-maior(rd(0, 99),rd(0, 99),rd(0, 99),rd(0, 99),rd(0, 99),rd(0, 99),rd(0, 99),rd(0, 99))
-
-
-
-
-
+# maior(rand())
 
 
